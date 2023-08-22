@@ -43,7 +43,6 @@ def is_valid_location(board, col):
 
 def winning_move(board, piece):
    # Check horizontally,  For each row, the inner loop iterates through the first 4 columns 
-    
     for row in range(6): # Connect Four has 6 rows
         for col in range(4): # Only need to go through 4 columns 
             if all(board[row][col+i] == piece for i in range(4)):
@@ -78,24 +77,26 @@ def main():
         else:
             piece = 'O'
 
-        col = int(input(f"Player {piece}, choose a column (1-{COLUMN_COUNT}): ")) - 1
+        # Take user input from the console
+        col = int(input("Player " + piece + ", choose a column (1-" + str(COLUMN_COUNT) + "): ")) - 1 
 
         if is_valid_location(board, col):
             if drop_piece(board, col, piece):
                 print_board(board)  # Print the board after dropping the piece
 
                 if winning_move(board, piece):
-                    print(f"Player {piece} wins!")
+                    print("Player" + piece + "wins!")
                     game_over = True
 
                 turn += 1
             else:
                 print("Column is full. Please choose a different column.") # if Column is full 
         else:
-            print("Invalid column. Please choose a column within the range.") # if User does not pick a column within range
+            print("Invalid column. Please choose a valid column within the range.") # if User does not pick a column within range
 
     print("Game Over")
 
+# Allows You to Execute Code When the File Runs as a Script, but not When It's Imported as a Module.
 if __name__ == "__main__":
     # Call the main function to start the Connect Four game.
     main()  
