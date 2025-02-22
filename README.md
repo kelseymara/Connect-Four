@@ -15,7 +15,6 @@ To play the game:
 ## Future Improvements
 Ways I can improve this project in the future include: 
 
-- Print out when there is a draw
 - Add a graphical user interface (GUI) to make the game more visually appealing.
 - Use Numpy for more efficient and optimized array operations, leading to improved performance and readability
 
