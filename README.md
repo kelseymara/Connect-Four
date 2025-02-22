@@ -13,8 +13,7 @@ To play the game:
 4) The game ends when a player wins or the board is filled, resulting in a draw.
    
 ## Future Improvements
-
-Here are some ideas for future improvements to enhance the game:
+Ways I can improve this project in the future include: 
 
 - Print out when there is a draw
 - Add a graphical user interface (GUI) to make the game more visually appealing.
