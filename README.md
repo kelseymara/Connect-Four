@@ -3,14 +3,16 @@
 ## Overview
 This Connect Four project was developed as a personal first exposure to Python. It is meant to provide an introductory learning experience and a foundation for building Python skills. 
 
-## How to Play
+## How to Run 
+Download the python file, cd to the directory the file is in, and type in your terminal: 
+```
+python connect-four-v1.py
+```
+## How to play
 
-To play the game:
-
-1) Run the Python script to start the game.
-2) Players take turns entering a column number (1-7) to drop their game piece into.
-3) The first player to connect four of their pieces in a vertically, horizontally, or diagonally wins the game.
-4) The game ends when a player wins or the board is filled, resulting in a draw.
+1) Players take turns entering a column number (1-7) to drop their game piece into.
+2) The first player to connect four of their pieces vertically, horizontally, or diagonally wins the game.
+3) If the board fills up without a win, the game ends in a draw. 
    
 ## Future Improvements
 Ways I can improve this project in the future include: 
