@@ -64,6 +64,13 @@ def winning_move(board, piece):
 
     return False
 
+# Check if there is a draw (board is full without a winning move)
+def decide_draw(board):
+    for col in range(COLUMN_COUNT): 
+        if board[0][col] == ' ': 
+            return False
+    return True
+
 def main():
     board = create_board()
     game_over = False
@@ -87,7 +94,9 @@ def main():
                 if winning_move(board, piece):
                     print("Player" + piece + "wins!")
                     game_over = True
-
+                elif decide_draw(board):
+                    print("The game is a draw")
+                else: 
                 turn += 1
             else:
                 print("Column is full. Please choose a different column.") # if Column is full 
